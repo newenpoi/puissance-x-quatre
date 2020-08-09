@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+/*
+    Espacements
+*/
+
+.pad {
+    padding: 0.4rem;
+}
+
+.pad-y {
+    padding: 0.4rem 0;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+/*
+    Blocs
+*/
+
+.flex-container {
+    display: flex;
+    height: 100%;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.right {
+    width: 128px;
+}
+
+.grid {
+    display: grid;
+    grid-column-gap: 24px;
+    grid-template-columns: auto auto;
+    background-color: #0e397bb0;
+    border-radius: 5px 5px 0 0;
+}
+
+.grid-item {
+    text-align: center;
+    font-family: "Consolas";
+}
+
+/*
+    Couleurs
+*/
+
+.bold {
+    font-weight: bold;
+}
+
+.font-yellow {
+    color: yellow;
+}
+
+.font-red {
+    color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.red {
+    background-color: red;
+}
+
+/*
+    Tableau
+*/
+
+tbody td {
+    position: relative;
+    z-index: 1;
+}
+
+.game {
+    width: 448px;
+    height: 384px;
+}
+
+.game tr > * {
+    border: 2px solid gray;
+    cursor: pointer;
+}
+
+.game tr th, .game tr td {
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+.highlight {
+    background-color: rgb(231, 243, 252);
+}
+
+/*
+    Paragraphes
+*/
+
+p {
+    margin-bottom: .4rem;
+    font-family: "Consolas";
+    text-align: center;
+}
+
+/*
+    Boutons
+*/
+
+.button {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: .8rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: "Consolas";
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
+.button:hover {
+    background-color: rgb(98, 157, 233);
+    cursor: pointer;
+}
